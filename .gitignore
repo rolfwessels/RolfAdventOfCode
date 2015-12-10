@@ -8,3 +8,4 @@ obj
 *.user
 *.ncrunchsolution
 *.suo
+*NCrunch_*

@@ -1,6 +1,6 @@
 namespace AdventOfCode.Core
 {
-    public class DayOneFloorCount
+    public class Day01FloorCount
     {
         public int CalculateFloor(string instructions)
         {

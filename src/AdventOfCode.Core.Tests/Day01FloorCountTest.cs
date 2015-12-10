@@ -5,15 +5,15 @@ using NUnit.Framework;
 namespace AdventOfCode.Core.Tests
 {
     [TestFixture]
-    public class DayOneFloorCountTest
+    public class Day01FloorCountTest
     {
-        private DayOneFloorCount _dayOneFloorCount;
+        private Day01FloorCount _day01FloorCount;
 
         #region Setup/Teardown
 
 	    public void Setup()
 	    {
-	        _dayOneFloorCount = new DayOneFloorCount();
+	        _day01FloorCount = new Day01FloorCount();
 	    }
 
         [TearDown]
@@ -30,7 +30,7 @@ namespace AdventOfCode.Core.Tests
 		    // arrange
 		    Setup();
 		    // action
-	        var floor = _dayOneFloorCount.CalculateFloor("");
+	        var floor = _day01FloorCount.CalculateFloor("");
 	        // assert
 	        floor.Should().Be(0);
 	    }
@@ -42,7 +42,7 @@ namespace AdventOfCode.Core.Tests
             // arrange
             Setup();
             // action
-            var floor = _dayOneFloorCount.CalculateFloor("(");
+            var floor = _day01FloorCount.CalculateFloor("(");
             // assert
             floor.Should().Be(1);
         }
@@ -53,7 +53,7 @@ namespace AdventOfCode.Core.Tests
             // arrange
             Setup();
             // action
-            var floor = _dayOneFloorCount.CalculateFloor(")");
+            var floor = _day01FloorCount.CalculateFloor(")");
             // assert
             floor.Should().Be(-1);
         }
@@ -64,7 +64,7 @@ namespace AdventOfCode.Core.Tests
             // arrange
             Setup();
             // action
-            var floor = _dayOneFloorCount.CalculateFloor("(())()()");
+            var floor = _day01FloorCount.CalculateFloor("(())()()");
             // assert
             floor.Should().Be(0);
         }
@@ -76,7 +76,7 @@ namespace AdventOfCode.Core.Tests
             // arrange
             Setup();
             // action
-            var floor = _dayOneFloorCount.CalculateFloor("(()(()(");
+            var floor = _day01FloorCount.CalculateFloor("(()(()(");
             // assert
             floor.Should().Be(3);
         }
@@ -87,7 +87,7 @@ namespace AdventOfCode.Core.Tests
             // arrange
             Setup();
             // action
-            var calculateFloor = _dayOneFloorCount.CalculateFloor(
+            var calculateFloor = _day01FloorCount.CalculateFloor(
                 EmbededResourceHelper.ReadResource("AdventOfCode.Core.Tests.Samples.Day1Input.txt",
                     GetType().Assembly));
             // assert
