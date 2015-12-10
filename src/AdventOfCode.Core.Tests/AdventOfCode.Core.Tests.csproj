@@ -75,6 +75,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day04StockingStufferTests.cs" />
     <Compile Include="Day03PresentDeviveryTests.cs" />
     <Compile Include="Day02WrappingPaperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
